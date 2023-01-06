@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container py-5">
+        <div class="btn-group d-flex justify-content-center mb-5">
+            <button class="btn btn-outline-primary users-btn" onclick="usersShow()">Users</button>
+            <button class="btn btn-outline-secondary posts-btn" onclick="postsShow()">Posts</button>
+            <button class="btn btn-outline-success users-posts-btn active" onclick="UsersAndPostShow()">Users and Posts</button>
+        </div>
+
+        <table class="table table-primary table-hover">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+
+        </table>
+
+       <div class="d-flex flex-wrap gap-2 justify-content-center" id="cards">
+       </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
